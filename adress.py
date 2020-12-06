@@ -4,7 +4,7 @@ db = client.dbsparta
 
 # 파일을 읽어드려서 데이터 베이스에 저장
 def address_to_database():
-    f = open("./address", 'r')
+    f = open("./address.txt", 'r')
 
     lines = f.readlines()
     for line in lines:
@@ -21,5 +21,6 @@ def list_do():
         print(address['info'][0], address['info'][1])
 
 
-list_do()
+# 함수 실행
+address_to_database()
 
